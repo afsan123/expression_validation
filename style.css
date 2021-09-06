@@ -1,0 +1,92 @@
+.button {
+    color: green;
+}
+
+
+#validation_field1 {
+    visibility: hidden;
+}
+
+#validation_field2 {
+    visibility: hidden;
+}
+
+#validation_field3 {
+    visibility: hidden;
+}
+
+.input_validation_field {
+    width: 97.6%;
+    font-size: inherit;
+    font-family: arial;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 1
+}
+
+body {
+    font-size: 18px;
+    font-family: arial;
+    line-height: 1.6;
+    background-color: #F3F0D7;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.select-box{
+    width: 100%;
+    position: relative;
+}
+
+
+.select-box select {
+    padding: 10px 15px;
+    height: 42px;
+    line-height: 20px;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+
+.select-box:after{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+    border-top: 8px solid green;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+}
+
+.select-box select :focus {
+    border: 2px solid green;
+}

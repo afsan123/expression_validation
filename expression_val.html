@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expression Validation</title>
+
+    <script src="express_val.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="select-box">
+            <select name="" id="menu_select" onchange="getMenuValue();">
+                <option value="">-- Please Select a Option --</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Number</option>
+                <option value="post_code">Post Code</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container" id="validation_field1">
+        <input class="input_validation_field" type="text" id="email_field" placeholder="Enter email">
+        <button onclick="emailValidation()" class="button" type="submit" id="email_submit">Check</button>
+    </div>
+
+    <div class="container" id="validation_field2">
+        <input class="input_validation_field" type="text" id="phone_field" placeholder="Enter phone">
+        <button onclick="phoneValidation()" class="button" type="submit" id="phone_submit">Check</button>
+    </div>
+
+    <div class="container" id="validation_field3">
+        <input class="input_validation_field" type="number" id="postcode_field" placeholder="Enter post code">
+        <button onclick="postcodeValidation()" class="button" type="submit" id="postcode_submit">Check</button>
+    </div>
+    
+</body>
+</html>
